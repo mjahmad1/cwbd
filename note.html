@@ -302,3 +302,53 @@ color: #0056b3;
 <button class="button button-link">Link Button</button>
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Read More Example</title>
+<style>
+.more-content {
+display: none;
+}
+.button {
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+background-color: #007bff;
+color: white;
+}
+</style>
+</head>
+<body>
+<h1>Article 1</h1>
+<p>This is a brief description of the first article. <span id="dots1">...</span><span id="more1" class="more-content">Here is the detailed content of the first article. It includes more information and insights about the topic discussed.</span></p>
+<button onclick="toggleContent('more1', 'dots1', this)" class="button">Read more</button>
+
+<h1>Article 2</h1>
+<p>This is a brief description of the second article. <span id="dots2">...</span><span id="more2" class="more-content">Here is the detailed content of the second article. It includes more information and insights about the topic discussed.</span></p>
+<button onclick="toggleContent('more2', 'dots2', this)" class="button">Read more</button>
+
+<script>
+function toggleContent(moreId, dotsId, btn) {
+var moreText = document.getElementById(moreId);
+var dots = document.getElementById(dotsId);
+
+if (moreText.style.display === "none") {
+moreText.style.display = "inline";
+dots.style.display = "none";
+btn.innerHTML = "Read less";
+} else {
+moreText.style.display = "none";
+dots.style.display = "inline";
+btn.innerHTML = "Read more";
+}
+}
+</script>
+</body>
+</html>
