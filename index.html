@@ -28,8 +28,14 @@
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
     </head>
-
     <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
 
         <!-- Navbar start -->
         <div class="container-fluid fixed-top px-0">
@@ -38,7 +44,7 @@
                     <div class="row align-items-center justify-content-center">
                         <div class="col-md-8">
                             <div class="topbar-info d-flex flex-wrap">
-                                <a href="#" class="text-light me-4"><i class="fas fa-envelope text-white me-2"></i>admin@crestwavebd.onmicrosoft.com.com</a>
+                                <a href="#" class="text-light me-4"><i class="fas fa-envelope text-white me-2"></i>admin@crestwavebd.onmicrisoft.com</a>
                                 <a href="#" class="text-light"><i class="fas fa-phone-alt text-white me-2"></i>+880 1306643884</a>
                             </div>
                         </div>
@@ -62,11 +68,11 @@
                     </button>
                     <div class="collapse navbar-collapse bg-light" id="navbarCollapse">
                         <div class="navbar-nav ms-auto">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="index.html" class="nav-item nav-link">Home</a>
                             <a href="about.html" class="nav-item nav-link">About</a>
                             <a href="service.html" class="nav-item nav-link">Services</a>
                             <a href="causes.html" class="nav-item nav-link">Causes</a>
-                            <a href="events.html" class="nav-item nav-link">Events</a>
+                            <a href="events.html" class="nav-item nav-link active">Events</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                 <div class="dropdown-menu m-0 bg-secondary rounded-0">
@@ -74,77 +80,28 @@
                                     <a href="gallery.html" class="dropdown-item">Gallery</a>
                                     <a href="volunteer.html" class="dropdown-item">Volunteers</a>
                                     <a href="donation.html" class="dropdown-item">Donation</a>
+                                    <a href="404.html" class="dropdown-item">404 Error</a>
                                 </div>
                             </div>
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
                         <div class="d-flex align-items-center flex-nowrap pt-xl-0" style="margin-left: 15px;">
-                            <a href="donation.html" class="btn-hover-bg btn btn-primary text-white py-2 px-4 me-3">Donate Now</a>
+                            <a href="" class="btn-hover-bg btn btn-primary text-white py-2 px-4 me-3">Donate Now</a>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
-    </div>
         <!-- Navbar End -->
 
-    </div>
-    </div>
-       <!-- Carousel Start -->
-            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img src="img/192000/3.png" style="width: 1920px; height: 800px;">
-                        <div class="carousel-caption">
-                            <div class="p-3" style="max-width: 900px;">
-                                <h2 class="display-1 text-capitalize text-white mb-4">Building a Peaceful and Modern Bangladesh</h2>
-                                <p class="mb-5 fs-5"><b>Crest-Wave</b> is dedicated to fostering a collaborative spirit among the people of Bangladesh</p>
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <a class="btn-hover-bg btn btn-primary text-white py-3 px-5" href="volunteer.html">Join With Us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/5/11.png" style="width: 1920px; height: 800px;">
-                        <div class="carousel-caption">
-                            <div class="p-3" style="max-width: 900px;">
-                                <h2 class="display-1 text-capitalize text-white mb-4">Uniting for a Brighter Future</h2>
-                                <p class="mb-5 fs-5">By working together, we aim to build a nation that is bright, peaceful, and modern</p>
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <a class="btn-hover-bg btn btn-primary text-white py-3 px-5" href="volunteer.html">Join With Us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/5/9.png" style="width: 1920px; height: 800px;">
-                        <div class="carousel-caption">
-                            <div class="p-3" style="max-width: 900px;">
-                                <h2 class="display-1 text-capitalize text-white mb-4">A Bright, Peaceful, and Modern Bangladesh</h2>
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <a class="btn-hover-bg btn btn-primary text-white py-3 px-5" href="volunteer.html">Join With Us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="text-white display-3 mb-4">Empowering Education and Sustainability</h1>
             </div>
-        <!-- Carousel End -->
-
+             <img src="img/5/9.png" style="width: 1024px; height: 800px;">
+            <h3 class="text-white display-3 mb-4">Crest-Wave is dedicated to protecting the hard-earned freedom of Bangladeshi students.</h3>
+        </div>
 
 
 
