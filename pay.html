@@ -144,26 +144,34 @@
 
 
 
-
-
-
-    <div class="container">
-            <div class="center">
-        <div class="header">
-            <p><b>Don't just ask for favors,<br> be cooperative.</b></p>
-            <button class="button" onclick="updateSubtotal(100)">100 BDT</button>
-            <button class="button" onclick="updateSubtotal(500)">500 BDT</button>
-            <button class="button" onclick="updateSubtotal(1000)">1000 BDT</button>
-            <button class="button" onclick="updateSubtotal(5000)">5000 BDT</button>
-            <button class="button" onclick="customAmount()">Custom Amount</button>
-            <br>
-            <button class="button" id="subtotal">Subtotal: 0 BDT</button>
-            <br>
-<p>Click on <b>Support Now</b> button for Complete your payment</p>
-<br>
-            <button class="button" onclick="goToCheckout()">Support Now</button>
+            <div class="header"></div>
+                <p><b>Select your Payment method</b></p>
+            <div class="header">
+                <button class="button" onclick="window.location.href='https://shop.bkash.com/quraner-fariwalarm50980/paymentlink/default-payment'">Bkash</button>
+                <button class="button" onclick="window.location.href='https://donate.stripe.com/fZe8A99rua8EbegfZ1'">PayPal</button>
+                <button class="button" onclick="window.location.href='https://donate.stripe.com/fZe8A99rua8EbegfZ1'">VISA</button>
+                <button class="button" onclick="window.location.href='https://donate.stripe.com/fZe8A99rua8EbegfZ1'">AMEX</button>
+                <button class="button" onclick="window.location.href='https://donate.stripe.com/fZe8A99rua8EbegfZ1'">DISCOVER</button>
+                <button class="button" onclick="window.location.href='https://donate.stripe.com/fZe8A99rua8EbegfZ1'">J C B</button>
+                <button class="button" onclick="window.location.href='https://donate.stripe.com/fZe8A99rua8EbegfZ1'">G-Pay</button>
+                <button class="button" onclick="window.location.href='https://donate.stripe.com/fZe8A99rua8EbegfZ1'">Apple Pay</button>
+                <button class="button" onclick="window.location.href='https://donate.stripe.com/fZe8A99rua8EbegfZ1'">Revolut Pay</button>
+                <button class="button" onclick="window.location.href='https://donate.stripe.com/fZe8A99rua8EbegfZ1'">Bank Transfer</button>
+            </div>
         </div>
-        </div>
+    </div>
+    <div class="header">
+<p>If you encounter any payment-related issues, please contact us at the following email: 
+<a href="mailto:mjahmad2024@outlook.com">mjahmad2024@outlook.com</a>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const savedSubtotal = localStorage.getItem('subtotal');
+            if (savedSubtotal) {
+                document.getElementById('subtotal').innerText = `subtotal: ${savedSubtotal} Tk`;
+            }
+        });
+    </script>
 
     
 
