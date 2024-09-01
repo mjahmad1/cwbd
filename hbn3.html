@@ -3,196 +3,621 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>বিস্তৃত প্রকল্প পরিকল্পনা</title>
+    <meta property="og:title" content="বন্যায় ক্ষতিগ্রস্ত হিফজ শিক্ষার্থীদের জন্য জরুরী সহায়তা করুন!সম্প্রতি ঘটে যাওয়া বন্যায় অসংখ্য হিফজ শিক্ষা প্রতিষ্ঠান ও শিক্ষার্থীদের জীবন আশংকাজনিত">
+    <meta property="og:description" content="মহাগ্রন্থ আল-কোরআন মুখস্থ করা অবস্থায় ধারাবাহিক অনুশীলনে বাধাগ্রস্ত হলে, একজন হিফজ শিক্ষার্থীর জন্য পুরো কোরআন মাজিদ আয়ত্ত করা অনেক বড় কষ্ট সাধ্য">
+    <meta property="og:image" content="https://mjahmad1.github.io/cwbd/img/558.jpg">
+    <meta property="og:url" content="https://mjahmad1.github.io/cwbd/hbn.html">
+    <title>CrestWave</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Galada', cursive;
             line-height: 1.6;
             margin: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            padding: 0;
+            background-color: white;
         }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 15px 20px;
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header-2 {
+            font-family: Galada, sans-serif;
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
             text-align: center;
         }
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            padding: 10px 20px;
+
+            header-2 a {
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 16px;
+            }
+
+            header-2 h1 {
+                font-family: Galada, sans-serif;
+                padding: 0;
+                list-style: none;
+            }
+
+            header-2 ul {
+                padding: 0;
+                list-style: none;
+            }
+
+            header-2 li {
+                float: left;
+                display: inline;
+                padding: 0 20px 0 20px;
+            }
+
+            header-2 #branding {
+                float: left;
+            }
+
+                header-2 #branding h1 {
+                    margin: 0;
+                }
+
+            header-2 nav {
+                float: right;
+                margin-top: 10px;
+            }
+
+        .header {
+            background: url('https://mjahmad1.github.io/cwbd/img/jo6.jpg') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 20px;
             text-align: center;
-            position: relative;
-            bottom: 0;
-            width: 100%;
         }
-        h1, h2, h3 {
-            color: #2c3e50;
+
+            .header img {
+                width: 70px;
+                height: 70px;
+            }
+
+        .donation-box {
+            padding: 20px;
+            text-align: center;
         }
-        ul {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-        .budget {
-            background-color: #e8f5e9;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .faq {
-            margin-top: 30px;
-            background-color: #e3f2fd;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .faq-answer {
+
+            .donation-box h2 {
+                margin-bottom: 20px;
+            }
+
+            .donation-box input[type="text"], .donation-box input[type="number"] {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            .donation-box button {
+                background: #28a745;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+            }
+
+                .donation-box button i {
+                    margin-right: 10px;
+                }
+
+                .donation-box button:hover {
+                    background: #218838;
+                }
+
+        .payment-methods {
             display: none;
-            margin-top: 5px;
+            text-align: center;
+            margin-top: 20px;
         }
-        .faq-question:hover + .faq-answer {
-            display: block;
+
+            .payment-methods h3 {
+                margin-bottom: 20px;
+            }
+
+            .payment-methods .buttons {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            .payment-methods button {
+                background: #007bff;
+                color: #fff;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: 1 1 calc(50% - 20px);
+                max-width: 200px;
+            }
+
+                .payment-methods button i {
+                    margin-right: 5px;
+                }
+
+                .payment-methods button:hover {
+                    background: #0056b3;
+                }
+
+        .payment-method {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
         }
-        .social-icons {
+
+            .payment-method h3 {
+                margin-bottom: 20px;
+            }
+
+            .payment-method .buttons {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            .payment-method button {
+                background: #007bff;
+                color: #fff;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: 1 1 calc(50% - 20px);
+                max-width: 200px;
+            }
+
+                .payment-method button i {
+                    margin-right: 5px;
+                }
+
+                .payment-method button:hover {
+                    background: #0056b3;
+                }
+
+        .footer {
+            background: #f1f1f1;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+
+            .footer .social-media {
+                margin-bottom: 10px;
+            }
+
+                .footer .social-media a {
+                    color: #333;
+                    font-size: 24px;
+                    margin: 0 10px;
+                    text-decoration: none;
+                }
+
+                    .footer .social-media a:hover {
+                        color: #007bff;
+                    }
+
+            .footer .links a {
+                color: #333;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+
+                .footer .links a:hover {
+                    text-decoration: underline;
+                }
+
+        .faq {
+            padding: 20px;
+            text-align: left;
+        }
+
+            .faq h2 {
+                margin-bottom: 20px;
+            }
+
+            .faq dt {
+                font-weight: bold;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+
+            .faq dd {
+                margin-left: 20px;
+                margin-bottom: 10px;
+                display: none;
+            }
+
+        .faq-visible dt {
+            font-weight: bold;
             margin-top: 10px;
         }
-        .social-icons a {
-            margin: 0 10px;
-            color: white;
+
+        .faq-visible dd {
+            margin-left: 20px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .fundraising-section {
+            padding: 20px;
+            text-align: center;
+            background-color: #e9ecef;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+            .fundraising-section img {
+                width: 50%;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+
+            .fundraising-section .progress-bar {
+                background-color: #28a745;
+                height: 20px;
+                border-radius: 5px;
+                width: 10%;
+                position: relative;
+            }
+
+                .fundraising-section .progress-bar::after {
+                    content: '10%';
+                    position: absolute;
+                    right: 10px;
+                    top: 0;
+                    color: #fff;
+                    font-weight: bold;
+                }
+
+            .fundraising-section .goal-raised {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+                text-align: center;
+            }
+
+        a {
             text-decoration: none;
         }
-    </style>
-    <script>
-        function toggleAnswer(id) {
-            const answer = document.getElementById(id);
-            answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+
+
+
+        section {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
         }
-    </script>
+
+            section a {
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 16px;
+            }
+
+            section ul {
+                padding: 0;
+                list-style: none;
+            }
+
+            section li {
+                float: left;
+                display: inline;
+                padding: 0 20px 0 20px;
+            }
+
+            section #branding {
+                float: left;
+            }
+
+                section #branding h1 {
+                    margin: 0;
+                }
+
+            section nav {
+                float: right;
+                margin-top: 10px;
+            }
+
+        .showcase {
+            min-height: 400px;
+            background: url('showcase.jpg') no-repeat 0 -400px;
+            text-align: center;
+            color: #fff;
+        }
+
+            .showcase h1 {
+                margin-top: 100px;
+                font-size: 55px;
+                margin-bottom: 10px;
+            }
+
+            .showcase p {
+                font-size: 20px;
+            }
+
+        .content {
+            padding: 20px;
+            background: #fff;
+        }
+
+            .content h2 {
+                color: #333;
+            }
+
+            .content p {
+                font-size: 18px;
+            }
+
+        .donate {
+            background: #77aaff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+
+            .donate p {
+                background: url('https://mjahmad1.github.io/cwbd/img/hif1.jpg') no-repeat center center;
+                background-size: cover;
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .donate a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 20px;
+                border: 1px solid #fff;
+                padding: 10px 20px;
+                border-radius: 5px;
+            }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>QURANER FARIWALA</h1>
-        <p>বন্যা কবলিত অঞ্চলের শিক্ষার্থীদের জন্য কোরআন বিতরণ প্রকল্প</p>
-    </header>
-    
-    <main>
-        <h2>১. প্রকল্পের উদ্দেশ্য:</h2>
-        <ul>
-            <li>বন্যা কবলিত অঞ্চলের শিক্ষার্থীদের মাঝে কোরআন মাজিদ বিতরণ করা।</li>
-            <li>শিক্ষার্থীদের ধর্মীয় শিক্ষার প্রসার ঘটানো।</li>
-            <li>ধর্মীয় মূল্যবোধ ও নৈতিক শিক্ষা বৃদ্ধি করা।</li>
-            <li>বন্যা কবলিত অঞ্চলে শিক্ষার প্রতি আগ্রহ সৃষ্টি করা।</li>
-        </ul>
+    <div class="header">
+        <img src="img/g1.gif" alt="" width="70" height="70">
+    </div>
 
-        <h2>২. লক্ষ্য গ্রুপ:</h2>
-        <ul>
-            <li>বন্যা কবলিত অঞ্চলের শিক্ষার্থীরা (বয়স ৬-১৮ বছর)।</li>
-            <li>স্থানীয় মসজিদ ও ধর্মীয় প্রতিষ্ঠান।</li>
-            <li>স্থানীয় সম্প্রদায়ের সদস্যরা।</li>
-        </ul>
-
-        <h2>৩. প্রকল্পের সময়কাল:</h2>
-        <ul>
-            <li>মোট সময়কাল: ৬ মাস।</li>
-            <li>প্রকল্পের ধাপসমূহের সময়সীমা:</li>
-            <ul>
-                <li>মুদ্রণ: ১ মাস</li>
-                <li>পরিবহন: ২ মাস</li>
-                <li>বিতরণ: ৩ মাস</li>
-            </ul>
-        </ul>
-
-        <h2>৪. প্রকল্পের ধাপসমূহ:</h2>
-        <div class="step">
-            <h3>১. মুদ্রণ:</h3>
-            <ul>
-                <li>কোরআন মাজিদ মুদ্রণের জন্য একটি নির্ভরযোগ্য প্রকাশনা সংস্থার সাথে চুক্তি করা।</li>
-                <li>মুদ্রণের মান নিশ্চিত করার জন্য নমুনা পরীক্ষা করা।</li>
-                <li>মুদ্রণের পরিমাণ নির্ধারণ করা (৬০,০০০ কপি)।</li>
-            </ul>
+    <div class="container">
+        <div class="donation-box">
+            <p><b>QURANER FARIWALA</b></p>
         </div>
+    </div>
+    <div class="container">
+        <div class="section">
+            <p>মোট বাজেট: ২,২৬,০০,০০০ টাকা </p>
+            <header>              
+                <p>বন্যা কবলিত অঞ্চলের শিক্ষার্থীদের জন্য কোরআন বিতরণ প্রকল্প</p>
+            </header>
 
-        <div class="step">
-            <h3>২. পরিবহন:</h3>
-            <ul>
-                <li>মুদ্রিত কোরআন মাজিদগুলি বন্যা কবলিত অঞ্চলে পরিবহন করার জন্য একটি পরিবহন সংস্থার সাথে চুক্তি করা।</li>
-                <li>পরিবহন সময়সূচী নির্ধারণ করা ও সঠিক সময়ে বিতরণের ব্যবস্থা করা।</li>
-                <li>বন্যা কবলিত অঞ্চলের নিরাপত্তা ও সুরক্ষা নিশ্চিত করা।</li>
-            </ul>
+            
+                <p><b>১. প্রকল্পের উদ্দেশ্য:</b></p>
+                <ul>
+                    <li>বন্যা কবলিত অঞ্চলের শিক্ষার্থীদের মাঝে কোরআন মাজিদ বিতরণ করা।</li>
+                    <li>শিক্ষার্থীদের ধর্মীয় শিক্ষার প্রসার ঘটানো।</li>
+                    <li>ধর্মীয় মূল্যবোধ ও নৈতিক শিক্ষা বৃদ্ধি করা।</li>
+                    <li>বন্যা কবলিত অঞ্চলে শিক্ষার প্রতি আগ্রহ সৃষ্টি করা।</li>
+                </ul>
+
+                <p>><b>২. লক্ষ্য গ্রুপ:</b></p>
+                <ul>
+                    <li>বন্যা কবলিত অঞ্চলের শিক্ষার্থীরা (বয়স ৬-১৮ বছর)।</li>
+                    <li>স্থানীয় মসজিদ ও ধর্মীয় প্রতিষ্ঠান।</li>
+                    <li>স্থানীয় সম্প্রদায়ের সদস্যরা।</li>
+                </ul>
+
+                <p><b>৩. প্রকল্পের সময়কাল:</b></p>
+                <ul>
+                    <li>মোট সময়কাল: ৬ মাস।</li>
+                    <li>প্রকল্পের ধাপসমূহের সময়সীমা:</li>
+                    <ul>
+                        <li>মুদ্রণ: ১ মাস</li>
+                        <li>পরিবহন: ২ মাস</li>
+                        <li>বিতরণ: ৩ মাস</li>
+                    </ul>
+                </ul>
+
+                <p><b>৪. প্রকল্পের ধাপসমূহ:</b></p>
+                <div class="step">
+                    <p>১. মুদ্রণ:</p>
+                    <ul>
+                        <li>কোরআন মাজিদ মুদ্রণের জন্য একটি নির্ভরযোগ্য প্রকাশনা সংস্থার সাথে চুক্তি করা।</li>
+                        <li>মুদ্রণের মান নিশ্চিত করার জন্য নমুনা পরীক্ষা করা।</li>
+                        <li>মুদ্রণের পরিমাণ নির্ধারণ করা (৬০,০০০ কপি)।</li>
+                    </ul>
+                </div>
+
+                <div class="step">
+                    <p>২. পরিবহন:</p>
+                    <ul>
+                        <li>মুদ্রিত কোরআন মাজিদগুলি বন্যা কবলিত অঞ্চলে পরিবহন করার জন্য একটি পরিবহন সংস্থার সাথে চুক্তি করা।</li>
+                        <li>পরিবহন সময়সূচী নির্ধারণ করা ও সঠিক সময়ে বিতরণের ব্যবস্থা করা।</li>
+                        <li>বন্যা কবলিত অঞ্চলের নিরাপত্তা ও সুরক্ষা নিশ্চিত করা।</li>
+                    </ul>
+                </div>
+
+                <div class="step">
+                    <p>৩. বিতরণ:</p>
+                    <ul>
+                        <li>স্থানীয় স্কুল ও মসজিদে কোরআন মাজিদ বিতরণের পরিকল্পনা তৈরি করা।</li>
+                        <li>শিক্ষার্থীদের ও তাদের অভিভাবকদের সাথে যোগাযোগ করা।</li>
+                        <li>বিতরণের সময় ধর্মীয় শিক্ষার গুরুত্ব সম্পর্কে আলোচনা করা।</li>
+                    </ul>
+                </div>
+
+                <p><b>৫. বাজেট পরিকল্পনা</b></p>
+                <div class="budget">
+                    <p>১. মুদ্রণ খরচ:</p>
+                    <ul>
+                        <li>প্রতি কোরআন মাজিদের মুদ্রণ খরচ: ৩৬০ টাকা</li>
+                        <li>মোট মুদ্রণ খরচ: ৬০,০০০ কপি × ৩৬০ টাকা = ২,১৬,০০,০০০ টাকা</li>
+                    </ul>
+
+                    <p>২. পরিবহন খরচ:</p>
+                    <ul>
+                        <li>পরিবহন খরচ: ৫,০০,০০০ টাকা।</li>
+                    </ul>
+
+                    <p>৩. বিতরণ খরচ:</p>
+                    <ul>
+                        <li>বিতরণ খরচ: ৩,০০,০০০ টাকা।</li>
+                    </ul>
+
+                    <p>৪. অন্যান্য খরচ:</p>
+                    <ul>
+                        <li>প্রশাসনিক খরচ, কর্মী খরচ ইত্যাদি: ২,০০,০০০ টাকা।</li>
+                    </ul>
+
+                    <p>মোট বাজেট:</p>
+                    <ul>
+                        <li>মুদ্রণ খরচ: ২,১৬,০০,০০০ টাকা</li>
+                        <li>পরিবহন খরচ: ৫,০০,০০০ টাকা</li>
+                        <li>বিতরণ খরচ: ৩,০০,০০০ টাকা</li>
+                        <li>অন্যান্য খরচ: ২,০০,০০০ টাকা</li>
+                        <li><strong>মোট বাজেট: ২,২৬,০০,০০০ টাকা</strong></li>
+                    </ul>
+                </div>
+
+                <p><b>৬. প্রকল্পের সফলতা মূল্যায়ন:</b></p>
+                <ul>
+                    <li>বিতরণের পর শিক্ষার্থীদের প্রতিক্রিয়া সংগ্রহ করা।</li>
+                    <li>ধর্মীয় শিক্ষার প্রসার সম্পর্কে স্থানীয় সম্প্রদায়ের মতামত নেওয়া।</li>
+                    <li>প্রকল্পের ফলাফল বিশ্লেষণ করে পরবর্তী প্রকল্পের জন্য সুপারিশ তৈরি করা।</li>
+                </ul>
         </div>
+    </div>
 
-        <div class="step">
-            <h3>৩. বিতরণ:</h3>
-            <ul>
-                <li>স্থানীয় স্কুল ও মসজিদে কোরআন মাজিদ বিতরণের পরিকল্পনা তৈরি করা।</li>
-                <li>শিক্ষার্থীদের ও তাদের অভিভাবকদের সাথে যোগাযোগ করা।</li>
-                <li>বিতরণের সময় ধর্মীয় শিক্ষার গুরুত্ব সম্পর্কে আলোচনা করা।</li>
-            </ul>
+    <div class="container">
+        <div class="footer">
+            <p><b>We accept..</b></p>
+            <button><i class="fab fa-paypal"></i>PayPal</button>
+            <button><i class="fab fa-cc-visa"></i>VISA</button>
+            <button><i class="fab fa-cc-amex"></i>AMEX</button>
+            <button><i class="fas fa-university"></i>Bank Transfer</button>
+            <button><i class="fab fa-cc-stripe"></i>Stripe</button>
         </div>
+    </div>
 
-        <h2>৫. বাজেট পরিকল্পনা</h2>
-        <div class="budget">
-            <h3>১. মুদ্রণ খরচ:</h3>
-            <ul>
-                <li>প্রতি কোরআন মাজিদের মুদ্রণ খরচ: ৩৬০ টাকা</li>
-                <li>মোট মুদ্রণ খরচ: ৬০,০০০ কপি × ৩৬০ টাকা = ২,১৬,০০,০০০ টাকা</li>
-            </ul>
-
-            <h3>২. পরিবহন খরচ:</h3>
-            <ul>
-                <li>পরিবহন খরচ: ৫,০০,০০০ টাকা।</li>
-            </ul>
-
-            <h3>৩. বিতরণ খরচ:</h3>
-            <ul>
-                <li>বিতরণ খরচ: ৩,০০,০০০ টাকা।</li>
-            </ul>
-
-            <h3>৪. অন্যান্য খরচ:</h3>
-            <ul>
-                <li>প্রশাসনিক খরচ, কর্মী খরচ ইত্যাদি: ২,০০,০০০ টাকা।</li>
-            </ul>
-
-            <h3>মোট বাজেট:</h3>
-            <ul>
-                <li>মুদ্রণ খরচ: ২,১৬,০০,০০০ টাকা</li>
-                <li>পরিবহন খরচ: ৫,০০,০০০ টাকা</li>
-                <li>বিতরণ খরচ: ৩,০০,০০০ টাকা</li>
-                <li>অন্যান্য খরচ: ২,০০,০০০ টাকা</li>
-                <li><strong>মোট বাজেট: ২,২৬,০০,০০০ টাকা</strong></li>
-            </ul>
+    <div class="container">
+        <div class="buttons">
+            <p>
+                যে কোন পরামর্শ বা অভিযোগ করতে দয়া করে নিচের ইমেইল ঠিকানায় যোগাযোগ করুন: <a href="mailto:mjahmad2024@outlook.com">mjahmad2024@outlook.com</a>
+            </p>
+            <p>আমরা একসাথে একটি সুন্দর ও সমৃদ্ধশালী ভবিষ্যৎ বাংলাদেশ গড়ে তুলবো।ইনশাআল্লাহ</p>
+            💖💖💖
         </div>
+    </div>
 
-        <h2>৬. প্রকল্পের সফলতা মূল্যায়ন:</h2>
-        <ul>
-            <li>বিতরণের পর শিক্ষার্থীদের প্রতিক্রিয়া সংগ্রহ করা।</li>
-            <li>ধর্মীয় শিক্ষার প্রসার সম্পর্কে স্থানীয় সম্প্রদায়ের মতামত নেওয়া।</li>
-            <li>প্রকল্পের ফলাফল বিশ্লেষণ করে পরবর্তী প্রকল্পের জন্য সুপারিশ তৈরি করা।</li>
-        </ul>
-
-        <h2>৭. সাধারণ জিজ্ঞাসা (FAQ):</h2>
-        <div class="faq">
-            <h3 class="faq-question" onclick="toggleAnswer('faq1')">প্রশ্ন ১: প্রকল্পটি কিভাবে পরিচালিত হবে?</h3>
-            <p id="faq1" class="faq-answer">প্রকল্পটি স্থানীয় ধর্মীয় প্রতিষ্ঠান, স্কুল এবং স্বেচ্ছাসেবক সংগঠনের সহযোগিতায় পরিচালিত হবে।</p>
-
-            <h3 class="faq-question" onclick="toggleAnswer('faq2')">প্রশ্ন ২: কোরআন মাজিদ বিতরণের জন্য কি কোন নির্দিষ্ট মানদণ্ড থাকবে?</h3>
-            <p id="faq2" class="faq-answer">হ্যাঁ, বিতরণের জন্য শিক্ষার্থীদের ধর্মীয় শিক্ষার প্রয়োজনীয়তা এবং আগ্রহের ভিত্তিতে নির্বাচিত করা হবে।</p>
-
-            <h3 class="faq-question" onclick="toggleAnswer('faq3')">প্রশ্ন ৩: এই প্রকল্পে স্বেচ্ছাসেবক হিসেবে অংশগ্রহণ করতে পারি কি?</h3>
-            <p id="faq3" class="faq-answer">অবশ্যই! আপনি স্থানীয় স্বেচ্ছাসেবক সংগঠনের মাধ্যমে যোগাযোগ করে অংশগ্রহণ করতে পারেন।</p>
-
-            <h3 class="faq-question" onclick="toggleAnswer('faq4')">প্রশ্ন ৪: প্রকল্পের জন্য অর্থায়ন কোথা থেকে আসবে?</h3>
-            <p id="faq4" class="faq-answer">প্রকল্পের অর্থায়ন স্থানীয় দানকারী, ধর্মীয় প্রতিষ্ঠানের সহযোগিতা এবং সম্প্রদায়ের সদস্যদের দানের মাধ্যমে হবে।</p>
-
-            <h3 class="faq-question" onclick="toggleAnswer('faq5')">প্রশ্ন ৫: বিতরণের পর শিক্ষার্থীদের জন্য কি ধরনের কার্যক্রম থাকবে?</h3>
-            <p id="faq5" class="faq-answer">বিতরণের পর শিক্ষার্থীদের জন্য ধর্মীয় শিক্ষা ও নৈতিক শিক্ষার কার্যক্রম পরিচালনা করা হবে।</p>
+    <div class="header">
+        <div class="footer">
+            <p>©2024 <strong>CrestWave</strong></p>
+            <p><b>With a Vision for Tomorrow's Leaders</b> <br>by <a href="https://climate.stripe.com/ArsPAE">MJ-AHMAD</a></p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/MdJaforAhmad1989"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/QuranerFariwala"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/jafor-ahmod/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.github.con/mjahmad1"><i class="fab fa-github"></i></a>
+                <a href="https://orcid.org/0009-0008-8560-0756"><i class="fab fa-orcid"></i></a>
+            </div>
+            <div class="links">
+                <a href="https://mjahmad1.github.io/cwbd/terms.html">Terms</a>
+                <a href="https://mjahmad1.github.io/cwbd/privacy.html">Privacy</a>
+                <a href="https://mjahmad1.github.io/cwbd/about.html">About</a>
+                <a href="https://mjahmad1.github.io/cwbd/"><strong>Home</strong></a>
+            </div>
         </div>
-    </main>
+    </div>
 
-    <footer>
-        <div class="social-icons">
+    <script>
+        function toggleAnswer(element) {
+            var answer = element.nextElementSibling;
+            if (answer.style.display === "none" || answer.style.display === "") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
 
-        </div>
-        <p>© ২০২৪ কোরআন বিতরণ প্রকল্প | <a href="#">শর্তাবলী</a> | <a href="#">গোপনীয়তা নীতি</a></p>
-    </footer>
+        function showPaymentMethods() {
+            document.getElementById('paymentMethods').style.display = 'block';
+        }
+
+        function showPaymentMethod() {
+            document.getElementById('paymentMethod').style.display = 'block';
+        }</script>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
 </body>
 </html>
