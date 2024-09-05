@@ -52,13 +52,41 @@
                 text-decoration: underline;
             }
 
-        .faq-answer {
-            display: none;
-        }
+.faq-section {
+margin-top: 40px;
+}
 
-        .faq-question:hover + .faq-answer {
-            display: block;
-        }
+.faq-section h2 {
+text-align: center;
+}
+
+.faq {
+margin: 20px 0;
+cursor: pointer;
+}
+
+.faq h3 {
+margin: 0;
+padding: 10px;
+background: #f4f4f4;
+border: 1px solid #ddd;
+border-radius: 5px;
+}
+
+.faq p {
+display: none;
+margin: 0;
+padding: 10px;
+background: #fff;
+border: 1px solid #ddd;
+border-top: none;
+border-radius: 0 0 5px 5px;
+}
+
+.faq.active p {
+display: block;
+}
+
 
         .iframe-container {
             position: relative;
@@ -132,26 +160,40 @@
             <li><strong>Creativity and Innovation:</strong> You will be exposed to new ideas and innovative thinking, which will further develop your creativity.</li>
             <li><strong>Social Contribution:</strong> Want to play a crucial role in societal development? Working at Crest-Wave Project will allow you to fulfill your social responsibilities.</li>
         </ul>
-
-        <h2>❓ FAQ (Frequently Asked Questions)</h2>
-        <p class="faq-question"><strong>Question 1: What are the qualifications required to apply?</strong></p>
-        <p class="faq-answer">Answer: Applicants must have at least a bachelor's degree in the relevant field and relevant work experience.</p>
-
-        <p class="faq-question"><strong>Question 2: How do I complete the application process?</strong></p>
-        <p class="faq-answer">Answer: To apply, visit <a href="https://mjahmad1.github.io/cwbd/hbn.html">Project Link</a> and fill out the specified form.</p>
-
-        <p class="faq-question"><strong>Question 3: What is the deadline for submitting applications?</strong></p>
-        <p class="faq-answer">Answer: The deadline for submitting applications is September 30, 2024.</p>
-
-        <p class="faq-question"><strong>Question 4: What are the working hours?</strong></p>
-        <p class="faq-answer">Answer: The working hours are six days a week, eight hours a day.</p>
-
-        <p class="faq-question"><strong>Question 5: What are the benefits of working on this project?</strong></p>
-        <p class="faq-answer">Answer: Professional development, networking opportunities, project management skills, creativity and innovation, and social contribution.</p>
-
-        <p class="faq-question"><strong>Question 6: What about the remuneration?</strong></p>
-        <p class="faq-answer">Answer: Initially, we are unable to provide remuneration. However, by working on the Crest-Wave Project, you will have the opportunity to use world-renowned digital tools. This experience will enrich your professional life and play a crucial role in your future career.</p>
-
+    </div>
+            <div class="container">
+<div class="faq-section">
+<h2>❓ FAQ (Frequently Asked Questions)</h2>
+<div class="faq">
+<h3>Question 1: What are the qualifications required to apply?</h3>
+<p>Answer: Applicants must have at least a bachelor's degree in the relevant field and relevant work experience.</p>
+</div>
+<div class="faq">
+<h3>Question 2: How do I complete the application process?</h3>
+<p>Answer: To apply, visit <a href="https://mjahmad1.github.io/cwbd/hbn.html">Project Link</a> and fill out the specified form.</p>
+</div>
+<div class="faq">
+<h3>Question 3: What is the deadline for submitting applications?</h3>
+<p>Answer: The deadline for submitting applications is September 30, 2024.</p>
+</div>
+<div class="faq">
+<h3>Question 4: What are the working hours?</h3>
+<p>Answer: The working hours are six days a week, eight hours a day.</p>
+</div>
+<div class="faq">
+<h3>Question 5: What are the benefits of working on this project?</h3>
+<p>Answer: Professional development, networking opportunities, project management skills, creativity and innovation, and social contribution.</p>
+</div>
+<div class="faq">
+<h3>Question 6: What about the remuneration?</h3>
+<p>Answer: Initially, we are unable to provide remuneration. However, by working on the Crest-Wave Project, you will have the opportunity to use world-renowned digital tools. This experience will enrich your professional life and play a crucial role in your future career.</p>
+</div>
+</div>
+</div>
+               <div class="container">
+                <h2>📝 Application Process:</h2>
+                <p>Interested candidates are requested to fill out the application form by clicking the button below. The deadline for submitting applications is September 30, 2024.</p>
+                <a href="https://mjahmad1.github.io/cwbd/hbn.html" target="_blank" style="background: #3498db; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Apply Now</a>
         <h2> To Apply:</h2>
         <div class="iframe-container">
             <iframe src="https://forms.office.com/Pages/ResponsePage.aspx?id=pMZDV6zIZkSuzaiuiCTO6jjJHz5agilNgikipQQnzfFUOU9IM0I1SEdPRU1LMEZFNTM0QjI2TFM1TC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen></iframe>
@@ -174,5 +216,12 @@
             <a href="#">Home</a>
         </div>
     </footer>
+           <script>
+                   document.querySelectorAll('.faq').forEach(item => {
+item.addEventListener('click', () => {
+item.classList.toggle('active');
+});
+});
+           </script>         
 </body>
 </html>
