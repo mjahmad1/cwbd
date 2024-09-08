@@ -1,0 +1,16 @@
+<?php
+// Assuming you have a database connection
+$customer_id = $_SESSION['customer_id']; // Customer's unique ID from session or database
+$referral_link = "https://www.yourwebsite.com/referral?ref=" . $customer_id;
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Refer and Earn</title>
+</head>
+<body>
+    <p>প্রিয় কাস্টমার, অন্যকে রেফার করুন বা সোস্যাল মিডিয়ায় শেয়ার করে পুরষ্কার জিতে নিন। রেফার বা শেয়ার করতে নিচের লিংক কপি করুন:</p>
+    <p><a href="<?php echo $referral_link; ?>"><?php echo $referral_link; ?></a></p>
+</body>
+</html>
