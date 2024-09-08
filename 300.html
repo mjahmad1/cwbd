@@ -8,9 +8,19 @@ $referral_link = "https://www.yourwebsite.com/referral?ref=" . $customer_id;
 <html>
 <head>
     <title>Refer and Earn</title>
+    <script>
+        function copyReferralLink() {
+            var copyText = document.getElementById("referralLink");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+            document.execCommand("copy");
+            alert("Copied the link: " + copyText.value);
+        }
+    </script>
 </head>
 <body>
     <p>প্রিয় কাস্টমার, অন্যকে রেফার করুন বা সোস্যাল মিডিয়ায় শেয়ার করে পুরষ্কার জিতে নিন। রেফার বা শেয়ার করতে নিচের লিংক কপি করুন:</p>
-    <p><a href="<?php echo $referral_link; ?>"><?php echo $referral_link; ?></a></p>
+    <input type="text" value="<?php echo $referral_link; ?>" id="referralLink" readonly>
+    <button onclick="copyReferralLink()">Copy Link</button>
 </body>
 </html>
