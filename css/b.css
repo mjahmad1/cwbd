@@ -1,0 +1,26 @@
+ @import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+
+      .containerb   {
+            font-family: 'Galada', cursive;
+        }
+
+        h1, h2 {
+            font-family: 'Galada', cursive;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-top: 15px;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+    
