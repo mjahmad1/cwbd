@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ইকমার্স টেমপ্লেট শপ</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+           px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        .template-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .template-grid div {
+            border: 1px solid #ccc;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text <a href="#templates" class="dropbtn">টেমপ্লেট</a>
+                    <div class="dropdown-content">
+                        <a href="#template1">টেমপ্লেট ১</a>
+                        <a href="#template2">টেমপ্লেট ২</a>
+                        <a href="#template3">টেমপ্লেট ৩</a>
+                        <a href="#template4">টেমপ্লেট ৪</a>
+                        <a href="#template5">টেমপ্লেট ৫</a>
+                    </div>
+                </li>
+                <li><a href="#contact">যোগাযোগ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>স্বাগতম</h2>
+            <p>আমাদের ইকমার্স টেমপ্লেট শপে স্বাগতম। এখানে আপনি বিভিন্ন ডিজাইন টেমপ্লেট পাবেন।</p>
+        </section>
+        <section id="templates">
+            <h2>টেমপ্লেট</h2>
+            <div class="template-grid">
+                <div>
+                    <h3>টেমপ্লেট ১</h3>
+                    <img src="template1.jpg" alt="টেমপ্লেট ১">
+                    <p>বর্ণনা...</p>
+                </div>
+                <div>
+                    <h3>টেমপ্লেট ২</h3>
+                    <img src="template2.jpg" alt="টেমপ্লেট ২">
+                    <p>বর্ণনা...</p>
+                </div>
+                <!-- আরও টেমপ্লেট যোগ করুন -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 ইকমার্স টেমপ্লেট শপ</p>
+    </footer>
+</body>
+
+</html>
